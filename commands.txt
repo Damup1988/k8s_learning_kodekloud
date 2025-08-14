@@ -1,2 +1,6 @@
 minikube start
 minikube status
+
+kubectl apply -f pod.yaml
+kubectl get pods
+kubectl describe pod nginx
