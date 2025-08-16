@@ -2,5 +2,12 @@ minikube start
 minikube status
 
 kubectl apply -f pod.yaml
+kubectl create -f pod.yaml
 kubectl get pods
 kubectl describe pod nginx
+kubectl create replicaset.yaml
+kubectl get replicaset
+kubectl delete pod pod_name
+kubectl describe replicaset replicaset_name
+kubectl edit replicaset replicaset_name
+kubectl scale replicaset replicaset_name --replicas=2
