@@ -25,3 +25,8 @@ kubectl apply -f deployment.yaml
 kubectl set image deployment/myapp-deployment nginx-2=nginx:1.12-perl
 
 kubectl rollout undo deployment/myapp-deployment
+
+kubectl get service
+minikube service myapp-service --url
+
+kubectl port-forward service/myapp-service 8080:80 > /dev/null 2>&1 &
